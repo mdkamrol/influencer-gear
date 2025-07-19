@@ -43,6 +43,7 @@ color:black;
     margin: 0px auto;
 align-items: center;
 margin-top: 100px;
+margin-bottom: 50px;
 }
 .banner img{
     width: 100%;
@@ -56,6 +57,7 @@ margin-top: 100px;
     justify-content: space-between;
     max-width: 1640px;
     margin: 0px auto;
+    
     flex-wrap: wrap;
     margin: 70px;
     border-bottom: 1px solid rgba(192, 204, 218, 1);
@@ -63,6 +65,8 @@ margin-top: 100px;
     padding:30px 0px;
     gap:20px;
     align-items: center;
+    margin-left: 120px;
+    
 }
 .list img{
     width: 100%;
@@ -73,13 +77,87 @@ margin-top: 100px;
     font-weight: bold;
 }
 
+.main-title{
+    max-width: 1640px;
+    margin:0px auto ;
+}
+
+.main-new-title{
+    max-width: 1640px;
+    margin:50px auto;
+    align-items: center;
+    display: flex;
+}
+
+.main{
+    max-width: 1140px;
+    margin:0px auto ;
+    /* gap:50px; */
+   
+    
+    
+}
+
+.main-father{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:50px ;
+    
 
 
+}
+
+.main-data{
+    background-color: #FFFFFF;
+    width:330px; 
+     height:470px; 
+    box-shadow: 0px 0px 5px black;
+    padding:10px;
+    /* margin:30px */
+    /* margin:0px auto; */
+
+}
+
+.div-abba{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1640px;
+    margin:0px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    
+}
+
+.div-abba img{
+    width: 100%;
+}
+.div-abba div{
+    width: 450px;
+}
+
+footer{
+    background-color: black;
+    height: 200px;
+}
 
 
 
 
 @media screen and ( max-width: 576px){
+    .div-abba div{
+    width: 576px;
+}
+    .div-abba{
+        flex-direction: column;
+    }
+    .main-father{
+         grid-template-columns: repeat(1, 1fr);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+    }
 
     .nav-father{
         flex-direction: column;
@@ -95,5 +173,8 @@ margin-top: 100px;
     }
     .banner img{
         margin-bottom: 50px;
+    }
+    .list{
+        margin:0px;
     }
 }
